@@ -5,19 +5,16 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class BrickBreakerGame extends JPanel implements ActionListener, KeyListener {
-    // Game constants
     private static final int WIDTH = 800;
     private static final int HEIGHT = 600;
     private static final int DELAY = 10;
     
-    // Game objects
     private Timer timer;
     private Paddle paddle;
     private Ball ball;
     private ArrayList<Brick> bricks;
     private ArrayList<PowerUp> powerUps;
     
-    // Game state
     private boolean inGame = false;
     private boolean gameOver = false;
     private int score = 0;
